@@ -1,6 +1,7 @@
 import React from "react";
 import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import Estados from "./components/estado_lista";
+import NovoEstado from "./components/estado_novo";
 
 export default function Rotas() {
     return(
@@ -13,6 +14,7 @@ export default function Rotas() {
                     </div>
                 }/>
                 <Route path="/estados" element={<Estados />}/>
+                <Route path="/estados/novo" element={<NovoEstado />}/>
             </Routes>
         </BrowserRouter>
     );

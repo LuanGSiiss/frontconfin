@@ -3,6 +3,7 @@ import './estado-lista-styles.css';
 import api from "../../services/api";
 import logoEstado from '../../assets/estado.png';
 import {FiEdit, FiTrash } from "react-icons/fi"
+import { Link } from "react-router";
 
 export default function Estados() {
     
@@ -24,6 +25,7 @@ export default function Estados() {
                 <img src={logoEstado} alt="Logo Estado" />
             </header>
             <h1>Lista de Estados</h1>
+            <Link className="button" to="novo">Novo Estado</Link>
             <table className="table table-bordered">
                 <thead>
                     <tr>
