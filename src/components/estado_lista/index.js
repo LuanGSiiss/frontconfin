@@ -42,12 +42,16 @@ export default function Estados() {
                                 <td>{estado.sigla}</td>
                                 <td>{estado.nome}</td>
                                 <td className="tdOpcoes">
-                                    <button type="button">
-                                        <FiEdit size="25" color="#17202a" />
-                                    </button>
-                                    <button type="button">
-                                        <FiTrash size="25" color="#FF5555" />
-                                    </button>
+                                    <Link to={`alterar/${estado.sigla}`}>
+                                        <button type="button">
+                                            <FiEdit size="25" color="#17202a" />
+                                        </button>
+                                    </Link>
+                                    <Link to={`excluir/${estado.sigla}`}>
+                                        <button type="button">
+                                            <FiTrash size="25" color="#FF5555" />
+                                        </button>
+                                    </Link>
                                 </td>
                             </tr>
                         ))
